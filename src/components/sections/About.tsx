@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin, Award, CheckCircle } from "lucide-react";
+import daniellePhoto from "../../../public/placeholder-danielle.jpg";
 
 export function About() {
   return (
@@ -23,7 +24,7 @@ export function About() {
               <div className="absolute inset-0 bg-primary/20 translate-x-4 translate-y-4"></div>
               <div className="absolute inset-0 bg-gray-100 overflow-hidden">
                 <Image 
-                  src="/placeholder-danielle.jpg" 
+                  src={daniellePhoto} 
                   alt="Danielle Corrêa - Corretora de Imóveis"
                   fill
                   className="object-cover transition-all duration-700"
@@ -34,7 +35,7 @@ export function About() {
               <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl border border-gray-100 max-w-[200px]">
                 <div className="flex items-center gap-3 mb-2">
                   <Award className="text-primary w-8 h-8" />
-                  <span className="font-heading text-2xl font-semibold">10+</span>
+                  <span className="font-heading text-2xl font-semibold">5+</span>
                 </div>
                 <p className="text-sm text-foreground/70 font-medium">Anos de experiência no mercado imobiliário</p>
               </div>
