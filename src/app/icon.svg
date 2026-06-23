@@ -1,30 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-  <!-- Fundo com cantos arredondados na cor Vinho -->
-  <rect width="512" height="512" fill="#4A1525" rx="96" />
+  <!-- Fundo na cor Vinho da identidade -->
+  <rect width="512" height="512" fill="#4A1525" />
   
-  <g stroke="#C5A059" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <!-- Linha do horizonte/solo -->
-    <line x1="96" y1="400" x2="416" y2="400" />
+  <g stroke="#FFFFFF" stroke-width="28" stroke-linecap="square" stroke-linejoin="miter" fill="none">
+    <!-- Linha base -->
+    <line x1="110" y1="380" x2="402" y2="380" />
     
-    <!-- Prédio esquerdo (moderno, topo reto) -->
-    <path d="M136 400 V220 H200 V400" />
+    <!-- Prédio 1 (Esquerda - Alto) -->
+    <path d="M160 380 V120 H210 V380" />
     
-    <!-- Casa/Prédio central (alto padrão, teto inclinado) -->
-    <path d="M216 400 V140 L266 100 L316 140 V400" />
+    <!-- Prédio 2 (Centro - Médio) -->
+    <path d="M230 380 V220 H280 V380" />
     
-    <!-- Prédio direito (menor) -->
-    <path d="M332 400 V270 H388 V400" />
-    
-    <!-- Detalhe da porta no prédio central -->
-    <path d="M250 400 V320 H282 V400" />
-    
-    <!-- Janelas decorativas -->
-    <line x1="168" y1="260" x2="168" y2="280" />
-    <line x1="168" y1="320" x2="168" y2="340" />
-    
-    <line x1="266" y1="180" x2="266" y2="210" />
-    <line x1="266" y1="250" x2="266" y2="280" />
-    
-    <line x1="360" y1="310" x2="360" y2="340" />
+    <!-- Prédio 3 (Direita - Baixo) -->
+    <path d="M300 380 V290 H350 V380" />
   </g>
 </svg>
