@@ -1,18 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-  <!-- Fundo na cor Vinho da identidade -->
+  <!-- Fundo na cor Vinho -->
   <rect width="512" height="512" fill="#4A1525" />
   
-  <g stroke="#FFFFFF" stroke-width="28" stroke-linecap="square" stroke-linejoin="miter" fill="none">
+  <g stroke="#C5A059" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <!-- Linha base -->
-    <line x1="110" y1="380" x2="402" y2="380" />
+    <line x1="100" y1="380" x2="412" y2="380" />
     
-    <!-- Prédio 1 (Esquerda - Alto) -->
-    <path d="M160 380 V120 H210 V380" />
+    <!-- Prédio 1 (Esquerda - Tamanho Médio) -->
+    <path d="M140 380 V200 H204 V380" />
+    <!-- Janelas Prédio 1 -->
+    <rect x="162" y="230" width="20" height="20" />
+    <rect x="162" y="270" width="20" height="20" />
+    <rect x="162" y="310" width="20" height="20" />
     
-    <!-- Prédio 2 (Centro - Médio) -->
-    <path d="M230 380 V220 H280 V380" />
+    <!-- Prédio 2 (Centro - Maior) -->
+    <path d="M224 380 V120 H288 V380" />
+    <!-- Janelas Prédio 2 -->
+    <rect x="246" y="150" width="20" height="20" />
+    <rect x="246" y="190" width="20" height="20" />
+    <rect x="246" y="230" width="20" height="20" />
+    <rect x="246" y="270" width="20" height="20" />
+    <rect x="246" y="310" width="20" height="20" />
     
-    <!-- Prédio 3 (Direita - Baixo) -->
-    <path d="M300 380 V290 H350 V380" />
+    <!-- Prédio 3 (Direita - Menor) -->
+    <path d="M308 380 V260 H372 V380" />
+    <!-- Janelas Prédio 3 -->
+    <rect x="330" y="290" width="20" height="20" />
+    <rect x="330" y="330" width="20" height="20" />
   </g>
 </svg>
