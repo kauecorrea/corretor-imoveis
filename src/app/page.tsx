@@ -7,8 +7,14 @@ import { Properties } from "@/components/sections/Properties";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Contact } from "@/components/sections/Contact";
 import { WhatsAppFloat } from "@/components/shared/WhatsAppFloat";
+import { client } from "@/sanity/client";
+import { getFeaturedPropertiesQuery, getPropertiesQuery } from "@/sanity/queries";
 
-export default function Home() {
+// Essa página será exportada de forma estática, mas fará a requisição para o Sanity durante o build
+export default async function Home() {
+  const properties = await client.fetch(getPropertiesQuery);
+  const featuredProperties = await client.fetch(getFeaturedPropertiesQuery);
+
   return (
     <>
       <Header />
@@ -16,7 +22,7 @@ export default function Home() {
         <Hero />
         <About />
         <Differentials />
-        <Properties />
+        <Properties initialProperties={properties} />
         <Testimonials />
         <Contact />
       </main>

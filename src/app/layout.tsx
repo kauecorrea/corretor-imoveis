@@ -28,8 +28,8 @@ export default function RootLayout({
       className={`${bodoniModa.variable} ${montserrat.variable} h-full antialiased`}
     >
       <head>
-        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://wa.me; connect-src 'self';" />
-        <meta httpEquiv="X-Frame-Options" content="DENY" />
+        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://wa.me https://cdn.sanity.io; connect-src 'self' https://*.sanity.io;" />
+        <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
       </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
