@@ -1,16 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-  <!-- Fundo em tom vinho/escuro -->
-  <rect width="512" height="512" fill="#4A1525" rx="100" />
+  <!-- Fundo com cantos arredondados na cor Vinho -->
+  <rect width="512" height="512" fill="#4A1525" rx="96" />
   
-  <!-- Ícone de prédio em dourado -->
-  <g stroke="#C5A059" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(100, 100) scale(13)">
-    <path d="M4 20h16" />
-    <path d="M9 8h1" />
-    <path d="M9 12h1" />
-    <path d="M9 16h1" />
-    <path d="M14 8h1" />
-    <path d="M14 12h1" />
-    <path d="M14 16h1" />
-    <path d="M6 20V5a1.5 1.5 0 0 1 1.5-1.5h9A1.5 1.5 0 0 1 18 5v15" />
+  <g stroke="#C5A059" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Linha do horizonte/solo -->
+    <line x1="96" y1="400" x2="416" y2="400" />
+    
+    <!-- Prédio esquerdo (moderno, topo reto) -->
+    <path d="M136 400 V220 H200 V400" />
+    
+    <!-- Casa/Prédio central (alto padrão, teto inclinado) -->
+    <path d="M216 400 V140 L266 100 L316 140 V400" />
+    
+    <!-- Prédio direito (menor) -->
+    <path d="M332 400 V270 H388 V400" />
+    
+    <!-- Detalhe da porta no prédio central -->
+    <path d="M250 400 V320 H282 V400" />
+    
+    <!-- Janelas decorativas -->
+    <line x1="168" y1="260" x2="168" y2="280" />
+    <line x1="168" y1="320" x2="168" y2="340" />
+    
+    <line x1="266" y1="180" x2="266" y2="210" />
+    <line x1="266" y1="250" x2="266" y2="280" />
+    
+    <line x1="360" y1="310" x2="360" y2="340" />
   </g>
 </svg>
