@@ -60,7 +60,7 @@ export function Testimonials() {
           {testimonials.map((testimonial) => (
             <div 
               key={testimonial.id} 
-              className="min-w-[85vw] md:min-w-[400px] snap-center bg-white p-8 md:p-10 border border-gray-100 shrink-0"
+              className="w-[85vw] max-w-[340px] md:max-w-none md:w-[400px] snap-center bg-white p-6 md:p-10 border border-gray-100 shrink-0"
             >
               <Quote className="text-primary/20 w-12 h-12 mb-6" />
               
