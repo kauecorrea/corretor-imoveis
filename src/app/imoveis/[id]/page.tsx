@@ -10,7 +10,14 @@ import { client } from "@/sanity/client";
 import { getPropertyBySlugQuery } from "@/sanity/queries";
 
 export async function generateStaticParams() {
-  const slugs = await client.fetch(`*[_type == "property"] { "id": slug.current }`);
+  const slugs = await client.fetch(`*[_type == "property" && defined(slug.current)] { "id": slug.current }`);
+  
+  // O Next.js falha o build de exportação estática se essa função retornar uma array vazia
+  // Então criamos uma rota falsa temporária caso o banco de dados não tenha nenhum imóvel
+  if (!slugs || slugs.length === 0) {
+    return [{ id: "banco-vazio" }];
+  }
+  
   return slugs;
 }
 
